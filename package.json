@@ -9,13 +9,15 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "precommit": "npm run lint:fix"
   },
   "dependencies": {
     "astro": "^4.11.3"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.21.2",
-    "eslint": "9.5.0"
+    "eslint": "^8.0.0",
+    "simple-git-hooks": "^2.11.1"
   }
 }
