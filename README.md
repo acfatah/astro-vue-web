@@ -1,14 +1,12 @@
-# Astro Starter Kit: Minimal
+# Astro + Vue 3 Static Web Generator
 
-```sh
-npm create astro@latest -- --template minimal
+Opinionated Astro + Vue 3 static web generator with Tailwind CSS.
+
+```bash
+npx degit acfatah/astro-vue-web my-website && \
+  cd my-website && \
+  npm install
 ```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ## 🚀 Project Structure
 
@@ -16,6 +14,7 @@ Inside of your Astro project, you'll see the following folders and files:
 
 ```text
 /
+├── components/
 ├── public/
 ├── src/
 │   └── pages/
@@ -25,22 +24,23 @@ Inside of your Astro project, you'll see the following folders and files:
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+We put our Vue componenets in `src/components/`.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Any static assets, like images, are placed in the `public/` directory.
 
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command                   | Action                                       |
+| :------------------------ | :------------------------------------------- |
+| `npm install`             | Installs dependencies                        |
+| `npm run dev`             | Starts local dev server at `localhost:4321`  |
+| `npm run build`           | Build your production site to `./dist/`      |
+| `npm run preview`         | Preview your build locally, before deploying |
+| `npm run lint`            | Run code linter on the project directory     |
+| `npm run lint:fix`        | Apply available code fixes using the linter  |
+| `npm run astro -- --help` | Get help using the Astro CLI                 |
 
 ## 👀 Want to learn more?
 
