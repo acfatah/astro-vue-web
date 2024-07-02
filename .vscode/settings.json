@@ -45,5 +45,10 @@
     "scss",
     "pcss",
     "postcss"
+  ],
+
+  // Remove css errors when using Tailwindcss functions and directives
+  "css.customData": [
+    ".vscode/tailwind.json"
   ]
 }
